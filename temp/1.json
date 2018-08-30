@@ -1,0 +1,20 @@
+{
+  "name": "config",
+  "profiles": [
+    "default"
+  ],
+  "label": null,
+  "version": "c7fcc1618c24ccff573ab3528cee0969c0ffedca",
+  "state": null,
+  "propertySources": [
+    {
+      "name": "https://github.com/leximus7/spring-cloud-config/application.yml",
+      "source": {
+        "spring.application.name": "config-server",
+        "spring.config.name": "configserver",
+        "spring.cloud.config.server.git.uri": "file://${user.home}/config-repo",
+        "server.port": 8888
+      }
+    }
+  ]
+}
